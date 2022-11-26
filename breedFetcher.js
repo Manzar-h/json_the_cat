@@ -20,12 +20,5 @@ const fetchBreedDescription = function(breedName, callback) {
   });
 
 };
-const breedName = process.argv[2];
+module.exports = {fetchBreedDescription};
 
-fetchBreedDescription(breedName, (error, desc) => {
-  if (error) {
-    console.log('Error:', error);
-  } else {
-    console.log(desc);
-  }
-});
